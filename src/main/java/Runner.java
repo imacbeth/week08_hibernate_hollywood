@@ -1,3 +1,4 @@
+import db.DBDirector;
 import db.DBFilm;
 import db.DBHelper;
 import models.Actor;
@@ -27,12 +28,17 @@ public class Runner {
         Film film1 = new Film("La La Land", director1, studio1, "Musical");
         DBHelper.save(film1);
 
+        Film film2 = new Film("Whiplash", director1, studio1, "Drama");
+        DBHelper.save(film2);
+
         DBFilm.addActorToFilm(ryan, film1);
         DBFilm.addActorToFilm(emma, film1);
 
         Director director =  DBFilm.getDirectorForFilm(film1);
 
         List<Actor> cast = DBFilm.getCastForFilm(film1);
+
+        List<Film> chazellesFilms = DBDirector.getDirectorsFilms(director1);
 
     }
 }
