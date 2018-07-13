@@ -1,7 +1,11 @@
 package models;
 
+import org.hibernate.annotations.Cascade;
+
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name = "films")
@@ -11,15 +15,17 @@ public class Film {
     private String title;
     private Director director;
     private List<Actor> cast;
+    private Studio studio;
     private String genre;
 
     public Film() { }
 
-    public Film(String title, Director director, List<Actor> cast, String genre) {
+    public Film(String title, Director director, Studio studio, String genre) {
         this.title = title;
         this.director = director;
-        this.cast = cast;
+        this.studio = studio;
         this.genre = genre;
+        this.cast = new ArrayList<Actor>();
     }
 
     @Id
@@ -42,7 +48,8 @@ public class Film {
         this.title = title;
     }
 
-    @Column(name = "director")
+    @ManyToOne
+    @JoinColumn(name = "director_id", nullable = false)
     public Director getDirector() {
         return director;
     }
@@ -51,13 +58,27 @@ public class Film {
         this.director = director;
     }
 
-    @Column(name = "cast")
+    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
+    @ManyToMany
+    @JoinTable(name = "films_actors",
+    joinColumns = {@JoinColumn(name = "film_id", nullable = false, updatable = false)},
+    inverseJoinColumns = {@JoinColumn(name = "actor_id", nullable = false, updatable = false)})
     public List<Actor> getCast() {
         return cast;
     }
 
     public void setCast(List<Actor> cast) {
         this.cast = cast;
+    }
+
+    @ManyToOne
+    @JoinColumn(name = "studio_id", nullable = false)
+    public Studio getStudio() {
+        return studio;
+    }
+
+    public void setStudio(Studio studio) {
+        this.studio = studio;
     }
 
     @Column(name = "genre")

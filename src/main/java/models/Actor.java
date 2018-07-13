@@ -1,29 +1,33 @@
 package models;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import org.hibernate.annotations.Cascade;
+
+import javax.persistence.*;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name = "actors")
 public class Actor extends Employee {
 
-    private List<Film> films;
+    private Set<Film> films;
 
     public Actor() { }
 
-    public Actor(String firstName, String lastName, double bankAccount, List<Film> films) {
+    public Actor(String firstName, String lastName, double bankAccount) {
         super(firstName, lastName, bankAccount);
-        this.films = films;
     }
 
-    @Column(name = "films")
-    public List<Film> getFilms() {
+    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
+    @ManyToMany
+    @JoinTable(name = "films_actors",
+            joinColumns = {@JoinColumn(name = "actor_id", nullable = false, updatable = false)},
+            inverseJoinColumns =  {@JoinColumn(name = "film_id", nullable = false, updatable = false)})
+    public Set<Film> getFilms() {
         return films;
     }
 
-    public void setFilms(List<Film> films) {
+    public void setFilms(Set<Film> films) {
         this.films = films;
     }
 }
