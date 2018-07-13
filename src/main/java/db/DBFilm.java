@@ -1,6 +1,7 @@
 package db;
 
 import models.Actor;
+import models.Director;
 import models.Film;
 import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
@@ -34,7 +35,24 @@ public class DBFilm {
         finally {
             session.close();
         }
-
         return cast;
+    }
+
+    public static Director getDirectorForFilm(Film film){
+        session = HibernateUtil.getSessionFactory().openSession();
+        Director director = null;
+
+        try {
+            Criteria cr = session.createCriteria(Director.class);
+            cr.createAlias("films", "film");
+            cr.add(Restrictions.eq("film.id", film.getId()));
+            director = (Director) cr.uniqueResult();
+        } catch (HibernateException e) {
+            e.printStackTrace();
+        } finally {
+            session.close();
+        }
+
+        return director;
     }
 }

@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="683c5a4a-a46f-4ac9-980c-32b331655f5f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/db/DBFilm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/DirectorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Film.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Film.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ActorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ActorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FilmTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FilmTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/models/Film.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/models/Film.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ActorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ActorTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/FilmTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/FilmTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/DBFilm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/DBFilm.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -102,8 +94,8 @@
       <file leaf-file-name="DBFilm.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/db/DBFilm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+            <state relative-caret-position="189">
+              <caret line="52" column="28" lean-forward="true" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -114,8 +106,8 @@
       <file leaf-file-name="Runner.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Runner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="682">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -244,8 +236,8 @@
         <option value="$PROJECT_DIR$/src/test/java/DirectorTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/FilmTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Film.java" />
-        <option value="$PROJECT_DIR$/src/main/java/db/DBFilm.java" />
         <option value="$PROJECT_DIR$/src/main/java/Runner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/db/DBFilm.java" />
       </list>
     </option>
   </component>
@@ -576,11 +568,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Runner.java</url>
-          <line>34</line>
+          <line>36</line>
           <properties />
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -791,8 +784,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/db/DBFilm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        <state relative-caret-position="189">
+          <caret line="52" column="28" lean-forward="true" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -801,8 +794,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="682">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

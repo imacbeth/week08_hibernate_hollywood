@@ -30,6 +30,8 @@ public class Runner {
         DBFilm.addActorToFilm(ryan, film1);
         DBFilm.addActorToFilm(emma, film1);
 
+        Director director =  DBFilm.getDirectorForFilm(film1);
+
         List<Actor> cast = DBFilm.getCastForFilm(film1);
 
     }
