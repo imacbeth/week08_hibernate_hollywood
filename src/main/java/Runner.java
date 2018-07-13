@@ -1,8 +1,11 @@
+import db.DBFilm;
 import db.DBHelper;
 import models.Actor;
 import models.Director;
 import models.Film;
 import models.Studio;
+
+import java.util.List;
 
 public class Runner {
 
@@ -23,6 +26,11 @@ public class Runner {
 
         Film film1 = new Film("La La Land", director1, studio1, "Musical");
         DBHelper.save(film1);
+
+        DBFilm.addActorToFilm(ryan, film1);
+        DBFilm.addActorToFilm(emma, film1);
+
+        List<Actor> cast = DBFilm.getCastForFilm(film1);
 
     }
 }

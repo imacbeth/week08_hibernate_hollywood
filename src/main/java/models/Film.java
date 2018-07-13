@@ -89,4 +89,10 @@ public class Film {
     public void setGenre(String genre) {
         this.genre = genre;
     }
+
+    public void addActorToFilm(Actor actor){
+        this.cast.add(actor);
+    }
+
+
 }

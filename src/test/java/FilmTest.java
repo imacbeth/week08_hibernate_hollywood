@@ -1,4 +1,5 @@
 import db.DBHelper;
+import models.Actor;
 import models.Director;
 import models.Film;
 import models.Studio;
@@ -13,6 +14,8 @@ public class FilmTest {
     Studio studio2;
     Director director1;
     Director director2;
+    Actor actor1;
+    Actor actor2;
     Film film;
 
     @Before
@@ -22,8 +25,14 @@ public class FilmTest {
 
         director1 = new Director("Damien", "Chazelle", 2500000.00);
         director2 = new Director("Billy", "Wilder", 2500000.00);
+        actor1 = new Actor("Ryan", "Gosling", 4000000.00);
+
+        actor2 = new Actor("Emma", "Stone", 4000000.00);
 
         film = new Film("La La Land", director1, studio1, "Musical");
+
+        film.addActorToFilm(actor1);
+        film.addActorToFilm(actor2);
 
     }
 
@@ -69,4 +78,11 @@ public class FilmTest {
         film.setGenre("Drama");
         assertEquals("Drama", film.getGenre());
     }
+
+    @Test
+    public void canGetCast(){
+        assertEquals(2, film.getCast().size());
+    }
+
+
 }

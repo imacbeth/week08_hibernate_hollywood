@@ -24,13 +24,27 @@ public class ActorTest {
     }
 
     @Test
+    public void canSetFirstName() {
+        actor1.setFirstName("Chris");
+        assertEquals("Chris", actor1.getFirstName());
+    }
+
+
+    @Test
     public void hasLastName() {
         assertEquals("Stone", actor2.getLastName());
+    }
 
+    @Test
+    public void canSetLastName() {
+        actor1.setLastName("Reynolds");
+        assertEquals("Reynolds", actor1.getLastName());
     }
 
     @Test
     public void hasBankAccount() {
         assertEquals(4000000.00, actor1.getBankAccount());
     }
+
+
 }
