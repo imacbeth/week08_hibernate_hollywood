@@ -1,3 +1,4 @@
+import db.DBActor;
 import db.DBDirector;
 import db.DBFilm;
 import db.DBHelper;
@@ -35,6 +36,8 @@ public class Runner {
         DBFilm.addActorToFilm(emma, film1);
 
         Director director =  DBFilm.getDirectorForFilm(film1);
+
+        List<Film> stonesFilms = DBActor.getActorsFilms(emma);
 
         List<Actor> cast = DBFilm.getCastForFilm(film1);
 
