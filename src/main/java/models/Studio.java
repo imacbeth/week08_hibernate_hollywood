@@ -9,13 +9,13 @@ public class Studio {
 
     private int id;
     private String name;
-    private int budget;
+    private double budget;
     private List<Film> films;
 
 
     public Studio() { }
 
-    public Studio(String name, int budget, List<Film> films) {
+    public Studio(String name, double budget, List<Film> films) {
         this.name = name;
         this.budget = budget;
         this.films = films;
@@ -42,11 +42,11 @@ public class Studio {
     }
 
     @Column(name = "budget")
-    public int getBudget() {
+    public double getBudget() {
         return budget;
     }
 
-    public void setBudget(int budget) {
+    public void setBudget(double budget) {
         this.budget = budget;
     }
 

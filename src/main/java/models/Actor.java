@@ -1,4 +1,4 @@
 package models;
 
-public class Actor {
+public class Actor extends Employee {
 }
