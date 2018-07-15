@@ -10,7 +10,7 @@ import java.util.Set;
 @Table(name = "actors")
 public class Actor extends Employee {
 
-    private Set<Film> films;
+    private List<Film> films;
 
     public Actor() { }
 
@@ -23,11 +23,15 @@ public class Actor extends Employee {
     @JoinTable(name = "films_actors",
             joinColumns = {@JoinColumn(name = "actor_id", nullable = false, updatable = false)},
             inverseJoinColumns =  {@JoinColumn(name = "film_id", nullable = false, updatable = false)})
-    public Set<Film> getFilms() {
+    public List<Film> getFilms() {
         return films;
     }
 
-    public void setFilms(Set<Film> films) {
+    public void setFilms(List<Film> films) {
         this.films = films;
+    }
+
+    public void addFilm(Film film){
+        this.films.add(film);
     }
 }

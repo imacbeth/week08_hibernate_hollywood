@@ -1,7 +1,4 @@
-import db.DBActor;
-import db.DBDirector;
-import db.DBFilm;
-import db.DBHelper;
+import db.*;
 import models.Actor;
 import models.Director;
 import models.Film;
@@ -15,6 +12,9 @@ public class Runner {
 
         Studio studio1 = new Studio("Lionsgate", 30000000.00);
         DBHelper.save(studio1);
+
+        Studio studio2 = new Studio("Warner Bros", 30000000.00);
+        DBHelper.save(studio2);
 
         Director director1 = new Director("Damien", "Chazelle", 2500000.00);
         DBHelper.save(director1);
@@ -33,15 +33,24 @@ public class Runner {
         DBHelper.save(film2);
 
         DBFilm.addActorToFilm(ryan, film1);
+
         DBFilm.addActorToFilm(emma, film1);
 
         Director director =  DBFilm.getDirectorForFilm(film1);
+
+        List<Film> goslingsFilms = DBActor.getActorsFilms(ryan);
 
         List<Film> stonesFilms = DBActor.getActorsFilms(emma);
 
         List<Actor> cast = DBFilm.getCastForFilm(film1);
 
         List<Film> chazellesFilms = DBDirector.getDirectorsFilms(director1);
+
+        List<Film> studio1films = DBStudio.getStudiosFilms(studio1);
+
+        DBStudio.canPayEmployee(studio1, emma, 1000000.00);
+
+
 
     }
 }
