@@ -59,4 +59,8 @@ public abstract class Employee {
     public void setBankAccount(double bankAccount) {
         this.bankAccount = bankAccount;
     }
+
+    public void getPaid(double amount){
+        this.bankAccount += amount;
+    }
 }

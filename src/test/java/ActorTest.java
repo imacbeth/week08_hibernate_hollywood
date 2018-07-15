@@ -46,5 +46,10 @@ public class ActorTest {
         assertEquals(4000000.00, actor1.getBankAccount());
     }
 
+    @Test
+    public void canGetPaid(){
+        actor1.getPaid(1000000.00);
+        assertEquals(5000000.00, actor1.getBankAccount());
+    }
 
 }

@@ -57,4 +57,9 @@ public class Studio {
     public void setFilms(List<Film> films) {
         this.films = films;
     }
+
+    public void payEmployee(Employee employee, double amount){
+        this.budget -= amount;
+        employee.getPaid(amount);
+    }
 }
