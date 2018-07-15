@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="683c5a4a-a46f-4ac9-980c-32b331655f5f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/DBActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/DBActor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Studio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Studio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ActorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ActorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/StudioTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -46,7 +43,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActorTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StudioTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/StudioTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="309">
+              <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FilmTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/FilmTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="37" selection-start-line="12" selection-end-line="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActorTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ActorTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
@@ -120,23 +141,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Runner.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Runner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="766">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DBActor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/db/DBActor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="369">
-              <caret line="35" column="3" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -164,24 +173,6 @@
               <caret line="17" column="66" lean-forward="true" selection-start-line="17" selection-start-column="66" selection-end-line="17" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DirectorTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/DirectorTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#471#472#0" expanded="true" />
-                <element signature="e#530#531#0" expanded="true" />
-                <element signature="e#723#724#0" expanded="true" />
-                <element signature="e#782#783#0" expanded="true" />
-                <element signature="e#977#978#0" expanded="true" />
-                <element signature="e#1042#1043#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -218,6 +209,7 @@
         <option value="$PROJECT_DIR$/src/main/java/models/Employee.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Studio.java" />
         <option value="$PROJECT_DIR$/src/test/java/ActorTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/StudioTest.java" />
       </list>
     </option>
   </component>
@@ -328,7 +320,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ActorTest.canGetPaid">
+  <component name="RunManager" selected="JUnit.StudioTest.canPayEmployees">
     <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Runner" />
       <module name="hollywood_db" />
@@ -371,14 +363,14 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="FilmTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FilmTest.canGetCast" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hollywood_db" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FilmTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="canGetCast" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -388,13 +380,13 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="FilmTest.canGetCast" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StudioTest.canPayEmployees" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hollywood_db" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FilmTest" />
-      <option name="METHOD_NAME" value="canGetCast" />
+      <option name="MAIN_CLASS_NAME" value="StudioTest" />
+      <option name="METHOD_NAME" value="canPayEmployees" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -444,19 +436,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.FilmTest" />
       <item itemvalue="JUnit.DirectorTest" />
       <item itemvalue="JUnit.FilmTest.canGetCast" />
       <item itemvalue="Application.Runner" />
       <item itemvalue="JUnit.ActorTest.canGetPaid" />
+      <item itemvalue="JUnit.StudioTest.canPayEmployees" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StudioTest.canPayEmployees" />
         <item itemvalue="JUnit.ActorTest.canGetPaid" />
         <item itemvalue="Application.Runner" />
         <item itemvalue="JUnit.FilmTest.canGetCast" />
         <item itemvalue="JUnit.DirectorTest" />
-        <item itemvalue="JUnit.FilmTest" />
       </list>
     </recent_temporary>
   </component>
@@ -497,6 +489,9 @@
     </history-entry>
     <history-entry file="FilmTest_canGetCast - 2018.07.13 at 14h 48m 58s.xml">
       <configuration name="FilmTest.canGetCast" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ActorTest_canGetPaid - 2018.07.15 at 18h 51m 53s.xml">
+      <configuration name="ActorTest.canGetPaid" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -641,26 +636,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/FilmTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="34" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#578#579#0" expanded="true" />
-            <element signature="e#636#637#0" expanded="true" />
-            <element signature="e#681#682#0" expanded="true" />
-            <element signature="e#711#712#0" expanded="true" />
-            <element signature="e#781#782#0" expanded="true" />
-            <element signature="e#811#812#0" expanded="true" />
-            <element signature="e#876#877#0" expanded="true" />
-            <element signature="e#906#907#0" expanded="true" />
-            <element signature="e#1931#1932#0" expanded="true" />
-            <element signature="e#1961#1962#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/DirectorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -720,7 +695,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/db/DBActor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="369">
-          <caret line="35" column="3" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -774,6 +749,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ActorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/Studio.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -800,10 +785,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ActorTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/FilmTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+        <state relative-caret-position="285">
+          <caret line="37" selection-start-line="12" selection-end-line="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/StudioTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
